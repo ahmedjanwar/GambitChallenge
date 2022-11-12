@@ -6,7 +6,7 @@ const  newdata= data.map( ( data) =>{
   return  (
     <div key= {data.id} className='data'>   
         <div className='id'>
-          ID: { data.ID}
+          { data.ID}
         </div>
         <div className='value'>
              Value: {data.Value}
