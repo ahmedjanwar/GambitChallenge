@@ -1,0 +1,646 @@
+[
+    {
+     "REGISTER": "0001-0002",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Flow Rate",
+     "FORMAT": "REAL4",
+     "NOTE": "Unit:m3\/h"
+    },
+    {
+     "REGISTER": "0003-0004",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Energy Flow Rate",
+     "FORMAT": "REAL4",
+     "NOTE": "Unit: GJ\/h"
+    },
+    {
+     "REGISTER": "0005-0006",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Velocity",
+     "FORMAT": "REAL4",
+     "NOTE": "Unit: m\/s"
+    },
+    {
+     "REGISTER": "0007-0008",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Fluid sound speed",
+     "FORMAT": "REAL4",
+     "NOTE": "Unit: m\/s"
+    },
+    {
+     "REGISTER": "0009-0010",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Positive accumulator",
+     "FORMAT": "LONG",
+     "NOTE": "Unit is selected by\nM31, and depends on totalizer multiplier"
+    },
+    {
+     "REGISTER": "0011-0012",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Positive decimal fraction",
+     "FORMAT": "REAL4",
+     "NOTE": "Same unit as the\ninteger part"
+    },
+    {
+     "REGISTER": "0013-0014",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Negative accumulator",
+     "FORMAT": "LONG",
+     "NOTE": "Long is a signed\n4-byte integer, lower byte first"
+    },
+    {
+     "REGISTER": "0015-0016",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Negative decimal fraction",
+     "FORMAT": "REAL4",
+     "NOTE": "REAL4 is a format of Singular IEEE-754 number, also called\nFLOAT"
+    },
+    {
+     "REGISTER": "0017-0018",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Positive energy accumulator",
+     "FORMAT": "LONG"
+    },
+    {
+     "REGISTER": "0019-0020",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Positive energy decimal fraction",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": "0021-0022",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Negative energy accumulator which is -56",
+     "FORMAT": "LONG"
+    },
+    {
+     "REGISTER": "0023-0024",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Negative energy decimal fraction",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": "0025-0026",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Net accumulator",
+     "FORMAT": "LONG"
+    },
+    {
+     "REGISTER": "0027-0028",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Net decimal fraction",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": "0029-0030",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Net energy accumulator",
+     "FORMAT": "LONG"
+    },
+    {
+     "REGISTER": "0031-0032",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Net energy decimal fraction",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": "0033-0034",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Temperature #1\/inlet is 7.101173400878906",
+     "FORMAT": "REAL4",
+     "NOTE": "Unit: C"
+    },
+    {
+     "REGISTER": "0035-0036",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Temperature #2\/outlet",
+     "FORMAT": "REAL4",
+     "NOTE": "Unit: C"
+    },
+    {
+     "REGISTER": "0037-0038",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Analog input AI3",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": "0039-0040",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Analog input AI4",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": "0041-0042",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Analog input AI5",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": "0043-0044",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Current input at AI3",
+     "FORMAT": "REAL4",
+     "NOTE": "In unit mA"
+    },
+    {
+     "REGISTER": "0045-0046",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Current input at AI3",
+     "FORMAT": "REAL4",
+     "NOTE": "In unit mA"
+    },
+    {
+     "REGISTER": "0047-0048",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Current input at AI3",
+     "FORMAT": "REAL4",
+     "NOTE": "In unit mA"
+    },
+    {
+     "REGISTER": "0049-0050",
+     "NUMBER": 2,
+     "VARIABLE NAME": "System password",
+     "FORMAT": "BCD",
+     "NOTE": "Writable。00H for unlock"
+    },
+    {
+     "REGISTER": 51,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Password for hardware",
+     "FORMAT": "BCD",
+     "NOTE": "Writable。“A55Ah” for unlock"
+    },
+    {
+     "REGISTER": "0053-0055",
+     "NUMBER": 3,
+     "VARIABLE NAME": "Calendar (date and time)",
+     "FORMAT": "BCD",
+     "NOTE": "Writable。6 Bytes of BCD stands\nSMHDMY，lower byte first"
+    },
+    {
+     "REGISTER": 56,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Day+Hour for Auto-Save",
+     "FORMAT": "BCD",
+     "NOTE": "Writable。For example 0512H\nstands Auto-save on 12:00 on 5th。0012H\nfor 12:00 on\neveryday。"
+    },
+    {
+     "REGISTER": 59,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Key to input",
+     "FORMAT": "INTEGER",
+     "NOTE": "Writable"
+    },
+    {
+     "REGISTER": 60,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Go to Window #",
+     "FORMAT": "INTEGER",
+     "NOTE": "Writable。"
+    },
+    {
+     "REGISTER": 61,
+     "NUMBER": 1,
+     "VARIABLE NAME": "LCD Back-lit lights for number of\nseconds",
+     "FORMAT": "INTEGER",
+     "NOTE": "Writable。In unit second"
+    },
+    {
+     "REGISTER": 62,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Times for the beeper",
+     "FORMAT": "INTEGER",
+     "NOTE": "Writable。Max 255"
+    },
+    {
+     "REGISTER": 62,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Pulses left for OCT",
+     "FORMAT": "INTEGER",
+     "NOTE": "Writable。Max 65535"
+    },
+    {
+     "REGISTER": 72,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Error Code",
+     "FORMAT": "BIT",
+     "NOTE": "16bits, see note 4"
+    },
+    {
+     "REGISTER": "0077-0078",
+     "NUMBER": 2,
+     "VARIABLE NAME": "PT100 resistance of inlet",
+     "FORMAT": "REAL4",
+     "NOTE": "In unit Ohm"
+    },
+    {
+     "REGISTER": "0079-0080",
+     "NUMBER": 2,
+     "VARIABLE NAME": "PT100 resistance of outlet",
+     "FORMAT": "REAL4",
+     "NOTE": "In unit Ohm"
+    },
+    {
+     "REGISTER": "0081-0082",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Total travel time",
+     "FORMAT": "REAL4",
+     "NOTE": "In unit Micro-second"
+    },
+    {
+     "REGISTER": "0083-0084",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Delta travel time",
+     "FORMAT": "REAL4",
+     "NOTE": "In unit Nino-second"
+    },
+    {
+     "REGISTER": "0085-0086",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Upstream travel time",
+     "FORMAT": "REAL4",
+     "NOTE": "In unit Micro-second"
+    },
+    {
+     "REGISTER": "0087-0088",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Downstream travel time",
+     "FORMAT": "REAL4",
+     "NOTE": "In unit Micro-second"
+    },
+    {
+     "REGISTER": "0089-0090",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Output current",
+     "FORMAT": "REAL4",
+     "NOTE": "In unit mA"
+    },
+    {
+     "REGISTER": 92,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Working step and Signal Quality which is at 38",
+     "FORMAT": "INTEGER",
+     "NOTE": "The high byte is the step and low for signal quality，range\n00-99，the larger the better"
+    },
+    {
+     "REGISTER": 93,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Upstream strength",
+     "FORMAT": "INTEGER",
+     "NOTE": "Range 0-2047"
+    },
+    {
+     "REGISTER": 94,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Downstream strength",
+     "FORMAT": "INTEGER",
+     "NOTE": "Range 0-2047"
+    },
+    {
+     "REGISTER": 96,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Language used in user interface",
+     "FORMAT": "INTEGER",
+     "NOTE": "0 : English，1:Chinese\n\nOther language will be supported later"
+    },
+    {
+     "REGISTER": "0097-0098",
+     "NUMBER": 2,
+     "VARIABLE NAME": "The rate of the measured travel\ntime by the calculated travel time.",
+     "FORMAT": "REAL4",
+     "NOTE": "Normal 100+-3%"
+    },
+    {
+     "REGISTER": "0099-0100",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Reynolds number",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": "0101-0102",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Pipe Reynolds factor",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": "0103-0104",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Working Timer",
+     "FORMAT": "LONG",
+     "NOTE": "unsigned，in second"
+    },
+    {
+     "REGISTER": "0105-0106",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Total working time",
+     "FORMAT": "LONG",
+     "NOTE": "unsigned，in second"
+    },
+    {
+     "REGISTER": "0105-0106",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Total power on-off time",
+     "FORMAT": "LONG",
+     "NOTE": "Unsigned"
+    },
+    {
+     "REGISTER": "0113-0114",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Net accumulator",
+     "FORMAT": "REAL4",
+     "NOTE": "In Cubic Meter，float"
+    },
+    {
+     "REGISTER": "0115-0116",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Positive accumulator",
+     "FORMAT": "REAL4",
+     "NOTE": "In Cubic Meter，float"
+    },
+    {
+     "REGISTER": "0117-0118",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Negative accumulator",
+     "FORMAT": "REAL4",
+     "NOTE": "In Cubic Meter，float"
+    },
+    {
+     "REGISTER": "0119-0120",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Net energy accumulator",
+     "FORMAT": "REAL4",
+     "NOTE": "In GJ，float"
+    },
+    {
+     "REGISTER": "0121-0122",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Positive energy accumulator",
+     "FORMAT": "REAL4",
+     "NOTE": "In GJ，float"
+    },
+    {
+     "REGISTER": "0123-0124",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Negative energy accumulator",
+     "FORMAT": "REAL4",
+     "NOTE": "In GJ，float"
+    },
+    {
+     "REGISTER": "0125-0126",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Flow for today",
+     "FORMAT": "REAL4",
+     "NOTE": "In Cubic Meter，float"
+    },
+    {
+     "REGISTER": "0127-0128",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Flow for this month",
+     "FORMAT": "REAL4",
+     "NOTE": "In Cubic Meter，float"
+    },
+    {
+     "REGISTER": "0129-0130",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Manual accumulator",
+     "FORMAT": "LONG"
+    },
+    {
+     "REGISTER": "0131-0132",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Manual accumulator decimal\nfraction",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": "0133-0134",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Batch accumulator",
+     "FORMAT": "LONG"
+    },
+    {
+     "REGISTER": "0135-0136",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Batch accumulator decimal\nfraction",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": "0137-0138",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Flow for today",
+     "FORMAT": "LONG"
+    },
+    {
+     "REGISTER": "0139-0140",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Flow for today decimal fraction",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": "0141-0142",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Flow for this month",
+     "FORMAT": "LONG"
+    },
+    {
+     "REGISTER": "0143-0144",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Flow for this month decimal\nfraction",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": "0145-0146",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Flow for this year",
+     "FORMAT": "LONG"
+    },
+    {
+     "REGISTER": "0147-0148",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Flow for this year decimal fraction",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": 158,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Current display window",
+     "FORMAT": "INTEGER"
+    },
+    {
+     "REGISTER": "0165-0166",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Failure timer",
+     "FORMAT": "LONG",
+     "NOTE": "In unit second"
+    },
+    {
+     "REGISTER": "0173-0174",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Current output frequency",
+     "FORMAT": "REAL4",
+     "NOTE": "Unit：Hz"
+    },
+    {
+     "REGISTER": "0175-0176",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Current output with 4-20mA",
+     "FORMAT": "REAL4",
+     "NOTE": "Unit：mA"
+    },
+    {
+     "REGISTER": "0181-0182",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Temperature difference",
+     "FORMAT": "REAL4",
+     "NOTE": "Unit：C"
+    },
+    {
+     "REGISTER": "0183-0184",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Lost flow for period of last power\noff",
+     "FORMAT": "REAL4",
+     "NOTE": "Unit：Cubic Meter"
+    },
+    {
+     "REGISTER": "0185-0186",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Clock coefficient",
+     "FORMAT": "REAL4",
+     "NOTE": "Should less than 0.1"
+    },
+    {
+     "REGISTER": "0187-0188",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Total time for Auto-Save",
+     "FORMAT": "REAL4",
+     "NOTE": "Time to save by 0056"
+    },
+    {
+     "REGISTER": "0189-0190",
+     "NUMBER": 2,
+     "VARIABLE NAME": "POS flow for Auto-Save",
+     "FORMAT": "REAL4",
+     "NOTE": "Time to save by 0056"
+    },
+    {
+     "REGISTER": "0191-0192",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Flow rate for Auto-Save",
+     "FORMAT": "REAL4",
+     "NOTE": "Time to save by 0056"
+    },
+    {
+     "REGISTER": "0221-0222",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Inner pipe diameter",
+     "FORMAT": "REAL4",
+     "NOTE": "In millimeter"
+    },
+    {
+     "REGISTER": "0229-0230",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Upstream delay",
+     "FORMAT": "REAL4",
+     "NOTE": "In microsecond"
+    },
+    {
+     "REGISTER": "0231-0232",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Downstream delay",
+     "FORMAT": "REAL4",
+     "NOTE": "In microsecond"
+    },
+    {
+     "REGISTER": "0233-0234",
+     "NUMBER": 2,
+     "VARIABLE NAME": "Calculated travel time",
+     "FORMAT": "REAL4",
+     "NOTE": "In microsecond"
+    },
+    {
+     "REGISTER": "0257-0288",
+     "NUMBER": 32,
+     "VARIABLE NAME": "LCD buffer",
+     "FORMAT": "BCD"
+    },
+    {
+     "REGISTER": 289,
+     "NUMBER": 1,
+     "VARIABLE NAME": "LCD buffer pointer",
+     "FORMAT": "INTEGER"
+    },
+    {
+     "REGISTER": 311,
+     "NUMBER": 2,
+     "VARIABLE NAME": "Worked time for today",
+     "FORMAT": "LONG",
+     "NOTE": "Unsigned, in seconds"
+    },
+    {
+     "REGISTER": 313,
+     "NUMBER": 2,
+     "VARIABLE NAME": "Worked time for this month",
+     "FORMAT": "LONG",
+     "NOTE": "Unsigned, in seconds"
+    },
+    {
+     "REGISTER": 1437,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Unit for flow rate",
+     "FORMAT": "INTEGER",
+     "NOTE": "See note 5"
+    },
+    {
+     "REGISTER": 1438,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Unit for flow totalizer",
+     "FORMAT": "INTEGER",
+     "NOTE": "Range 0~7,see note 1"
+    },
+    {
+     "REGISTER": 1439,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Multiplier for totalizer",
+     "FORMAT": "INTEGER",
+     "NOTE": "Range 0~7,see note 1"
+    },
+    {
+     "REGISTER": 1440,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Multiplier for energy accumulator",
+     "FORMAT": "INTEGER",
+     "NOTE": "Range 0~10,see note\n1"
+    },
+    {
+     "REGISTER": 1441,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Unit for energy rate",
+     "FORMAT": "INTEGER",
+     "NOTE": "0=GJ1=Kcal\n2=KWh，3=BTU"
+    },
+    {
+     "REGISTER": 1442,
+     "NUMBER": 1,
+     "VARIABLE NAME": "Device address",
+     "FORMAT": "INTEGER"
+    },
+    {
+     "REGISTER": 1451,
+     "NUMBER": 2,
+     "VARIABLE NAME": "User scale factor",
+     "FORMAT": "REAL4"
+    },
+    {
+     "REGISTER": 1521,
+     "NUMBER": 2,
+     "VARIABLE NAME": "Manufacturer scale factor",
+     "FORMAT": "REAL4",
+     "NOTE": "Read only"
+    },
+    {
+     "REGISTER": 1529,
+     "NUMBER": 2,
+     "VARIABLE NAME": "Electronic serial number",
+     "FORMAT": "BCD",
+     "NOTE": "High byte first"
+    }
+   ]

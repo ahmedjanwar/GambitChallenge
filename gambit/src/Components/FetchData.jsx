@@ -9,7 +9,7 @@ const  newdata= data.map( ( data) =>{
           { data.ID}
         </div>
         <div className='value'>
-             Value: {data.Value}
+             {data.Value}
         </div>  
     </div> 
   
