@@ -7,9 +7,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/**  <FetchData />   
+        {/**    
         <ListData />  */}
         <ChartData />
+        <FetchData /> 
       </header>
     </div>
   );

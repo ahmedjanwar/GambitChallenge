@@ -9,8 +9,7 @@ function ListData() {
         {recordData && 
             recordData.map(({ID, Value})=>(
                 <div key={ID} className="row">
-                    <strong>{ID} = </strong>
-                    
+                    <strong>{ID}</strong>
                     <strong>{Value}</strong>
                 </div>
             ))}

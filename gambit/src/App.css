@@ -12,18 +12,16 @@
 .data{
   font-size: 20px;
   padding-left: 25px;
-  display: flex;
-  /*justify-content: space-around;*/
+  
+  
   gap: 25px;
-
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
   text-align: center;
 }
 .id{
   color: red;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
 }
 .value{
   color: green;
